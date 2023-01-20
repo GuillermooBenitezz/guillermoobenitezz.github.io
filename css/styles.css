@@ -212,7 +212,7 @@ html{
 }
 
 #curriculum {
-    width: fi-content;
+    width: fit-content;
     display: block;
     margin: 20px auto;
     color: #fff;
