@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio | Guillermo Benítez Márquez</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Guillermo Benítez</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/guillermo.jpg" alt="Guillermo Benítez Márquez">
+            </div>
+            <h1>GUILLERMO BENÍTEZ MÁRQUEZ</h1>
+            <h2>Programador - Desarrollador</h2>
+            <div class="redes">
+                <a href="https://github.com/GuillermooBenitezz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/GuillermooHttp"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/http.guillermoo/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Guillermo Benítez Márquez.</span> Aprendiz programador y Desarrollador de aplicaciones moviles y aplicaciones de escritorio</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha Nacimiento</strong>
+                            28-02-2003
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            guillermoobm@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Coin, Málaga
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Front Developer</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <a id="curriculum" href="archivo/CurriCulum_BenitezGuillermo.pdf" download="CurriCulum_BenitezGuillermo.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>59%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>E.S.O</h4>
+                        <span class="casa">I.E.S Los Montecillos</span>
+                        <span class="fecha">2015 - 2019</span>
+                        <p>Obtube la titulación, de la ESO completa.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grado Medio - Sistema Microinformáticos y Redes</h4>
+                        <span class="casa">I.E.S Serrania</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Windows Server, Ubuntu, Packet Tracer, Reparacion de periféricos y ordenadores, cableados de red wifi, maquinas virtuales, ofimática.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Practicas</h4>
+                        <span class="casa">App Informatica Coin</span>
+                        <span class="fecha">Marzo 2021 - Julio 2021</span>
+                        <p>Arreglos de ordenadores y periféricos, instalaciones de sistemas operativos, limpieza de ordenadores, limpieza de virus, cableados, instalaciones de camaras de seguridad, instalaciones de proyectores para institutos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/GuillermooBenitezz?tab=repositories" id="buttonportfolio">
+                        <button>
+                            Ver más <i class="fas fa-angle-double-right"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/guillermoobm@gmail.com" method="post">
+                        <label for="Nombre"></label>
+                        <input type="text" name="nombre" placeholder="Nombre y apellidos" required>
+                        <label for="Telefono" ></label>
+                        <input type="number" name="telefono" placeholder="Número telefónico (Opcional)">
+                        <label for="Email" ></label>
+                        <input type="email" name="email" placeholder="Dirección de correo" required>
+                        <label for="Tema"></label>
+                        <input type="text" name="tema" placeholder="Tema" required>
+                        <label for="Mensaje"></label>
+                        <textarea name="mensaje" name="Mensaje" id="mensajecampo" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>                   
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102403.82538386111!2d-4.839832017163801!3d36.67162668207853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72dcd8b1e36ebb%3A0x403d278a576e4f0!2zQ2_DrW4sIDI5MTAwLCBNw6FsYWdh!5e0!3m2!1ses!2ses!4v1669918772262!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Coin, Málaga
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: guillermoobm@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/GuillermooBenitezz"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/GuillermooHttp"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/http.guillermoo/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
